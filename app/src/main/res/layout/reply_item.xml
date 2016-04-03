@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/reply_head_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/reply_body_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒么么哒"
+            android:textColor="@color/myblackfortext"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reply_bar_rela"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/reply_head_rela"
+        android:background="@color/white" >
+
+        <!--
+             <TextView
+            android:id="@+id/reply_date_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="时间："
+            android:textColor="@color/wechat_button_gray" />
+        -->
+
+        <TextView
+            android:id="@+id/reply_floor_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="5"
+            android:textColor="@color/wechat_button_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/reply_floor_hit_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/reply_floor_textview"
+            android:text="楼"
+            android:textColor="@color/wechat_button_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/reply_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/reply_floor_hit_textview"
+            android:text="刚刚"
+            android:textColor="@color/wechat_button_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/reply_praise_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/reply_praise_checkbox"
+            android:text="11"
+            android:textColor="@color/wechat_button_gray"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:id="@+id/reply_praise_checkbox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/praise_checkbox"
+            android:button="@null"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wechat_conversation_backgroud" >
+
+    <include
+        android:id="@+id/about_activity_back_title_bar"
+        layout="@layout/back_bar_include" />
+
+    <ImageView
+        android:id="@+id/about_activity_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/icon_new" />
+
+    <TextView
+        android:id="@+id/about_activity_verision_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_activity_imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="1.0"
+        android:textColor="@color/gray"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/about_check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/about_activity_verision_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="@string/check_for_update"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/about_activity_make4_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_check_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/addr"
+        android:textColor="@color/gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/about_activity_make3_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_activity_make4_textview"
+        android:layout_centerHorizontal="true"
+        android:text="@string/phone_number"
+        android:textColor="@color/gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/about_activity_make2_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/about_activity_make_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:text="@string/made_information"
+        android:textColor="@color/gray"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/about_activity_make_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/contact_information"
+        android:textColor="@color/gray"
+        android:textSize="11dp" />
+
+</RelativeLayout>

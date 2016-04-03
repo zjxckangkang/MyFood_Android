@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/food_kind_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="21dp"
+    android:background="@color/wechat_conversation_backgroud"
+    android:visibility="gone" >
+
+    <!--
+             <View
+            android:layout_alignParentTop="true"
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/wechat_line_gray" />
+    -->
+    <!--
+              <View
+            android:id="@+id/line3"
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/wechat_line_gray" />
+    -->
+
+    <TextView
+        android:id="@+id/food_kind"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        android:text="kind"
+        android:textColor="@color/gray"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/wechat_line_gray" />
+
+</RelativeLayout>

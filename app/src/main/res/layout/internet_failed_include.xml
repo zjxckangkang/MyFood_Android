@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadfail_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/loadfailimageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/loadfail_textview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/wifi" />
+
+    <TextView
+        android:id="@+id/loadfail_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/load_failed"
+        android:textColor="@color/gray"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/loadfail_textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadfail_textview1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/internet_connection_failed_please_check"
+        android:textColor="@color/gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/loadfail_textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadfail_textview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/pull_to_retry"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wechat_conversation_backgroud" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/board_bottom_bar_include" >
+
+        <include
+            android:id="@+id/board_internet_failed_include"
+            layout="@layout/internet_failed_include" />
+
+        <com.lvkang.app.myfoodandroid.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/board_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:overScrollMode="never"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderBackground="@color/white"
+            ptr:ptrHeaderTextColor="@color/gray"
+            ptr:ptrShowIndicator="false" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/board_bottom_bar_include"
+        layout="@layout/message_send_bar" />
+
+</RelativeLayout>

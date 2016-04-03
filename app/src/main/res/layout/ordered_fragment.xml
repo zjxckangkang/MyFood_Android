@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ordered_relaticelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/ordered_fragment_include"
+            layout="@layout/internet_failed_include" />
+
+        <com.lvkang.app.myfoodandroid.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ordered_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/wechat_line_gray"
+            android:dividerHeight="1px"
+            android:overScrollMode="never"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderBackground="@color/white"
+            ptr:ptrHeaderTextColor="@color/gray"
+            ptr:ptrShowIndicator="false" />
+    </FrameLayout>
+
+</RelativeLayout>

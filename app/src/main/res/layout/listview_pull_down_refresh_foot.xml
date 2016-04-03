@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/listview_refresh_foot"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:text="@string/no_more"
+        android:textSize="18dp"
+        />
+    
+
+</RelativeLayout>

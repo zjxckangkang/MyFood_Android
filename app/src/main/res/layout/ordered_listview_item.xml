@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ordered_listview_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/wechat_conversation_backgroud" />
+
+    <View
+        android:id="@+id/title_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_view"
+        android:background="@color/wechat_line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_view_line"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/date_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="日期："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/date_textview_hint"
+            android:layout_toRightOf="@+id/date_textview_hint"
+            android:text="1992-03-10"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/time_textview_hint"
+            android:layout_toRightOf="@+id/date_textview_hint"
+            android:text="33:33:33"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/time_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/date_textview_hint"
+            android:layout_marginLeft="20dp"
+            android:text="时间："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/sn_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/date_textview_hint"
+            android:layout_toLeftOf="@+id/sn_textview"
+            android:text="日单号："
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/sn_textview"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/date_textview_hint"
+            android:layout_marginRight="20dp"
+            android:text="0013"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tableid_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/time_textview_hint"
+            android:layout_marginLeft="20dp"
+            android:text="桌号："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tableid_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/tableid_textview_hint"
+            android:layout_toRightOf="@+id/tableid_textview_hint"
+            android:text="6"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/num_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/price_textview_hint"
+            android:layout_below="@+id/price_textview_hint"
+            android:text="数量："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/num_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/num_textview_hint"
+            android:layout_toRightOf="@+id/num_textview_hint"
+            android:text="6"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/price_textview_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/sn_textview_hint"
+            android:layout_alignTop="@+id/time_textview_hint"
+            android:text="金额："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/price_textview_hint"
+            android:layout_toRightOf="@+id/price_textview_hint"
+            android:text="6"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/remarks_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tableid_textview_hint"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:maxLength="255"
+            android:text="。。。。。"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/ordered_list_adapter_hint_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/remarks_textview"
+            android:layout_marginTop="10dp"
+            android:background="@color/wechat_line_gray"
+            android:textColor="@color/myblackfortext" />
+
+        <TextView
+            android:id="@+id/ordered_list_adapter_hint"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ordered_list_adapter_hint_view"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="已购列表："
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/ordered_list_view_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ordered_list_adapter_hint"
+            android:background="@color/wechat_line_gray" />
+
+        <ListView
+            android:id="@+id/ordered_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordered_list_view_view"
+            android:divider="@drawable/listview_divider_10dp"
+            android:dividerHeight="1px" >
+        </ListView>
+
+        <View
+            android:id="@+id/ordered_list_view_foot_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ordered_list_view"
+            android:background="@color/wechat_line_gray" />
+
+        <Button
+            android:id="@+id/ordered_listview_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ordered_list_view_foot_view"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

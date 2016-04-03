@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <CheckBox
+            android:id="@+id/ordered_praise"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/praise_checkbox"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/ordered_food_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ordered_praise"
+            android:gravity="center_vertical|left"
+            android:text="奥尔良烤鸡腿汉堡"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_food_price"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ordered_num_hint"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="10000"
+            android:textColor="@color/myorange"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_food_price__remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/ordered_food_price"
+            android:text="元"
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_food_num"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ordered_food_unitprice_remarks"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="999"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_num_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/ordered_food_num"
+            android:text="份"
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_food_unitprice"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ordered_food_name"
+            android:text="0.0"
+            android:textColor="@color/myblackfortext"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ordered_food_unitprice_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/ordered_food_unitprice"
+            android:text="元/份"
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

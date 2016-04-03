@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/shop_bar_include"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:id="@+id/mainfragment_include"
+            layout="@layout/internet_failed_include" />
+
+        <RelativeLayout
+            android:id="@+id/mainfragment_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/wechat_conversation_backgroud"
+                android:orientation="horizontal" >
+
+
+                <ListView
+                    android:id="@+id/attrlist"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="1px"
+                    android:dividerHeight="1px"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+            <com.lvkang.app.myfoodandroid.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/linearlayout"
+                android:divider="@drawable/listview_divider_12dp"
+                android:dividerHeight="1px"
+                android:overScrollMode="never"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrHeaderBackground="@color/white"
+                ptr:ptrHeaderTextColor="@color/gray"
+                ptr:ptrShowIndicator="false" />
+
+            <include
+                android:id="@+id/food_kind_hint"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/linearlayout"
+                android:layout_height="21dp"
+                layout="@layout/food_kind_hint_include"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/shop_bar_include"
+        layout="@layout/shop_bar" />
+
+</RelativeLayout>

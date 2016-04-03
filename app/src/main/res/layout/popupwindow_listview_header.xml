@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupwindows_relativelayout2"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/mygraywhite" >
+
+    <TextView
+        android:id="@+id/popup_window_header_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="我的篮子"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/popupwindow_hearder_delete_all"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_sub"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="清空"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

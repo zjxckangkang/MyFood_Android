@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/shop_activity_back_bar_include"
+        layout="@layout/back_bar_include" />
+
+    <TextView
+        android:id="@+id/textview_shop_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/shop_activity_back_bar_include"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="填写信息："
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/textview_shop_detail_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textview_shop_detail"
+        android:layout_marginBottom="2dp"
+        android:background="@color/wechat_line_gray" />
+
+    <ListView
+        android:id="@+id/listview_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_shop_activity"
+        android:layout_below="@+id/textview_shop_list_hint_divider2"
+        android:background="@color/wechat_conversation_backgroud"
+        android:divider="@drawable/listview_divider_10dp"
+        android:dividerHeight="1px"
+        android:overScrollMode="never" >
+    </ListView>
+
+    <View
+        android:id="@+id/title_view_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listview_shop"
+        android:background="@color/wechat_conversation_backgroud" />
+
+    <EditText
+        android:id="@+id/edittext_shop_table_id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textview_shop_table_id"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/textview_shop_table_id"
+        android:background="@drawable/shop_edittext"
+        android:hint=" 此填写餐桌号码，打包请填0"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="@color/wechat_button_gray"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textview_shop_table_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textview_shop_detail_divider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="桌号："
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textview_shop_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview_shop_table_id"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="备注："
+        android:textSize="14dp" />
+
+    <include
+        android:id="@+id/include_shop_activity"
+        layout="@layout/shop_bar" />
+
+    <EditText
+        android:id="@+id/edittext_shop_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview_shop_remarks"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/textview_shop_table_id"
+        android:background="@drawable/shop_edittext"
+        android:ems="10"
+        android:hint="在此填写其他偏好，常温，重辣等"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:minHeight="30dp"
+        android:textColorHint="@color/wechat_button_gray"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/title_view_shop_list_hint2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/edittext_shop_remarks"
+        android:layout_marginTop="5dp"
+        android:background="@color/wechat_conversation_backgroud" />
+
+    <View
+        android:id="@+id/textview_shop_list_hint_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/textview_shop_list_hint"
+        android:background="@color/wechat_line_gray" />
+
+    <TextView
+        android:id="@+id/textview_shop_list_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_view_shop_list_hint2"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="欲购清单："
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/textview_shop_list_hint_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textview_shop_list_hint"
+        android:background="@color/wechat_line_gray" />
+
+    <View
+        android:id="@+id/listview_shop_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@+id/listview_shop"
+        android:background="@color/wechat_line_gray" />
+
+    <View
+        android:id="@+id/title_view_shop_list_hint2_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/edittext_shop_remarks"
+        android:layout_margin="5dp"
+        android:background="@color/wechat_line_gray" />
+
+</RelativeLayout>

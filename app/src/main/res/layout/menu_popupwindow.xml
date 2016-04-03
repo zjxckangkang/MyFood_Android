@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@color/mythemblackblack"
+        android:gravity="center"
+        android:text="关于"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/advice"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@color/mythemblackblack"
+        android:gravity="center"
+        android:text="意见或建议"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@color/mythemblackblack"
+        android:gravity="center"
+        android:text="欢迎页"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+</LinearLayout>
