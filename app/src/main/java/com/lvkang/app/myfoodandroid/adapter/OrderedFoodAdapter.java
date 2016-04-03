@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.lvkang.app.myfoodandroid.myfood.json.OrderFood;
-import com.lvkang.app.myfoodandroid.myfood.main.OrderedFragment;
+import com.lvkang.app.myfoodandroid.main.OrderedFragment;
 import com.lvkang.myfoodtoandroid.R;
 
 import java.util.ArrayList;

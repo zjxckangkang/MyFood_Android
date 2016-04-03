@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.lvkang.app.myfoodandroid.myfood.json.Food;
-import com.lvkang.app.myfoodandroid.myfood.main.MainFragment;
+import com.lvkang.app.myfoodandroid.main.MainFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;

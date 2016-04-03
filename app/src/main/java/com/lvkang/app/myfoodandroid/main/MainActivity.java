@@ -1,4 +1,4 @@
-package com.lvkang.app.myfoodandroid.myfood.main;
+package com.lvkang.app.myfoodandroid.main;
 
 import android.content.Context;
 import android.content.Intent;

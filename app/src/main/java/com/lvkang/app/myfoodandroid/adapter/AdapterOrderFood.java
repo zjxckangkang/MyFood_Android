@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.lvkang.app.myfoodandroid.myfood.main.ShopActivity;
+import com.lvkang.app.myfoodandroid.main.ShopActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

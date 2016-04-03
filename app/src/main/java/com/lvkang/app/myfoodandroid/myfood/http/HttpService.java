@@ -1,6 +1,6 @@
 package com.lvkang.app.myfoodandroid.myfood.http;
 
-import com.lvkang.app.myfoodandroid.myfood.main.MainActivity;
+import com.lvkang.app.myfoodandroid.main.MainActivity;
 import com.lvkang.app.myfoodandroid.myfood.utils.Print;
 import com.lvkang.app.myfoodandroid.myfood.utils.VersionUtils;
 

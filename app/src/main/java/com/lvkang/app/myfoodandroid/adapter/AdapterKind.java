@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.lvkang.app.myfoodandroid.myfood.main.MainFragment;
+import com.lvkang.app.myfoodandroid.main.MainFragment;
 import com.lvkang.myfoodtoandroid.R;
 
 import java.util.List;

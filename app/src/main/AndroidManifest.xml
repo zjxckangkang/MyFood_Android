@@ -18,13 +18,13 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name="com.lvkang.app.myfoodandroid.myfood.main.MyApplication"
+        android:name="com.lvkang.app.myfoodandroid.main.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/icon_new"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.SplashActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
@@ -35,34 +35,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.MainActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.ShopActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.ShopActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.SearchActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.SearchActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.WelcomeActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.WelcomeActivity"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.BoardReplyActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.BoardReplyActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.lvkang.app.myfoodandroid.myfood.main.AboutActivity"
+            android:name="com.lvkang.app.myfoodandroid.main.AboutActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
         </activity>

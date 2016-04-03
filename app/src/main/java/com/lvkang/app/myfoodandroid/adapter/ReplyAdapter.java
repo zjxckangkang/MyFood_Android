@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.lvkang.app.myfoodandroid.myfood.json.Reply;
-import com.lvkang.app.myfoodandroid.myfood.main.BoardReplyActivity;
+import com.lvkang.app.myfoodandroid.main.BoardReplyActivity;
 import com.lvkang.app.myfoodandroid.myfood.utils.DateTimeUtils;
 import com.lvkang.myfoodtoandroid.R;
 

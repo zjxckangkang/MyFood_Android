@@ -16,9 +16,9 @@ import android.widget.TextView;
 
 import com.lvkang.app.myfoodandroid.image.AsyncImageLoader;
 import com.lvkang.app.myfoodandroid.myfood.json.Food;
-import com.lvkang.app.myfoodandroid.myfood.main.MainActivity;
-import com.lvkang.app.myfoodandroid.myfood.main.MainFragment;
-import com.lvkang.app.myfoodandroid.myfood.main.MyApplication;
+import com.lvkang.app.myfoodandroid.main.MainActivity;
+import com.lvkang.app.myfoodandroid.main.MainFragment;
+import com.lvkang.app.myfoodandroid.main.MyApplication;
 
 import java.util.ArrayList;
 import java.util.HashMap;
