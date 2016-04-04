@@ -28,7 +28,6 @@ import java.util.HashMap;
  */
 public class AdapterFoodKinds extends BaseAdapter {
 	private class buttonViewHolder {
-		int i=0;
 		ImageView itemIcon;
 		TextView foodName;
 		TextView foodUnitPrice;
